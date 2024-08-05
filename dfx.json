@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "playspace_backend": {
+      "main": "src/playspace_backend/main.mo",
+      "type": "motoko"
+    },
+    "playspace_frontend": {
+      "dependencies": [
+        "playspace_backend"
+      ],
+      "source": [
+        "src/playspace_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "playspace_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
